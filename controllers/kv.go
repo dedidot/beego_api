@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"encoding/json"
-	"github.com/goldalworming/simple_kvdb/models"
-	"github.com/goldalworming/simple_kvdb/modules/utils"
+	"skripsih/models"
+	"skripsih/modules/utils"
 	// "errors"
 	"strconv"
 	// "strings"

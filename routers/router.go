@@ -8,7 +8,7 @@
 package routers
 
 import (
-	"github.com/goldalworming/simple_kvdb/controllers"
+	"skripsih/controllers"
 
 	"github.com/astaxie/beego"
 )
@@ -17,5 +17,6 @@ func init() {
 
 	beego.Router("/kv", &controllers.KvController{}, "get:GetAll")
 	beego.Router("/kv/:id", &controllers.KvController{}, "get:GetOne;post:Post;put:Put;delete:Delete")
-
+	
+	beego.Router("agenda", &controllers.AgendaController{}, "get:GetAgenda")
 }

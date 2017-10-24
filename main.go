@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "github.com/goldalworming/simple_kvdb/routers"
+	_ "skripsih/routers"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/plugins/cors"
@@ -10,7 +10,7 @@ import (
 )
 
 func init() {
-	orm.RegisterDataBase("default", "mysql", "root:root@tcp(127.0.0.1:3306)/kvdb")
+	orm.RegisterDataBase("default", "mysql", "root:@/kvdb?charset=utf8")
 }
 
 func main() {
